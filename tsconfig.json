@@ -17,6 +17,13 @@
         "strictBindCallApply": false,
         "forceConsistentCasingInFileNames": false,
         "noFallthroughCasesInSwitch": false,
-        "noUnusedLocals": true
-    }
+        "noUnusedLocals": true,
+        "paths": {
+            "@grpc-proto-typescript/nestjs": ["./src/nestjs"],
+            "@grpc-proto-typescript/nestjs/*": ["./src/nestjs/*"],
+            "@grpc-proto-typescript/typescript": ["./src/typescript/*"],
+            "@grpc-proto-typescript/typescript/*": ["./src/typescript/*"]
+        }
+    },
+    "references": []
 }
