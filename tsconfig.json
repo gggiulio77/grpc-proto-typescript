@@ -17,9 +17,6 @@
         "strictBindCallApply": false,
         "forceConsistentCasingInFileNames": false,
         "noFallthroughCasesInSwitch": false,
-        "noUnusedLocals": true,
-        "paths": {
-            "@nestjs/*": ["src/nestjs/*"]
-        }
+        "noUnusedLocals": true
     }
 }
