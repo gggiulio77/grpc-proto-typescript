@@ -10,9 +10,9 @@
     ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc",
         "generate:nestjs": "protoc --plugin=protoc-gen-ts_proto=\".\\node_modules\\.bin\\protoc-gen-ts_proto.cmd\" --ts_proto_out=./src/nestjs -I=./proto ./proto/*.proto --ts_proto_opt=nestJs=true",
-        "generate:typescript": "protoc --plugin=protoc-gen-ts_proto=\".\\node_modules\\.bin\\protoc-gen-ts_proto.cmd\" --ts_proto_out=./src/typescript -I=./proto ./proto/*.proto"
+        "generate:typescript": "protoc --plugin=protoc-gen-ts_proto=\".\\node_modules\\.bin\\protoc-gen-ts_proto.cmd\" --ts_proto_out=./src/typescript -I=./proto ./proto/*.proto",
+        "build": "tsc -b -v"
     },
     "author": "",
     "license": "ISC",

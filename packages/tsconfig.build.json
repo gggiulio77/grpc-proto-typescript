@@ -10,6 +10,8 @@
         "allowSyntheticDefaultImports": true,
         "target": "ES2021",
         "sourceMap": true,
+        "outDir": ".",
+        "rootDir": ".",
         "incremental": true,
         "skipLibCheck": true,
         "strictNullChecks": false,
@@ -17,16 +19,6 @@
         "strictBindCallApply": false,
         "forceConsistentCasingInFileNames": false,
         "noFallthroughCasesInSwitch": false,
-        "noUnusedLocals": true,
-        "outDir": "dist",
-        "baseUrl": ".",
-        "paths": {
-            "@grpc-proto-typescript/nestjs": ["./packages/nestjs"],
-            "@grpc-proto-typescript/nestjs/*": ["./packages/nestjs/*"],
-            "@grpc-proto-typescript/typescript": ["./packages/typescript"],
-            "@grpc-proto-typescript/typescript/*": ["./packages/typescript/*"]
-        }
-    },
-    "include": ["packages/**/*"],
-    "exclude": ["node_modules", "**/*.spec.ts"]
+        "noUnusedLocals": true
+    }
 }
