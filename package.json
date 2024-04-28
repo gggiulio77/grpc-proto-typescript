@@ -2,25 +2,11 @@
     "name": "grpc-proto-typescript",
     "version": "1.0.0",
     "description": "",
-    "exports": {
-        "./nestjs": {
-            "types": "./dist/nestjs/index.d.ts",
-            "require": "./dist/nestjs/index.js"
-        },
-        "./typescript": {
-            "types": "./dist/typescript/index.d.ts",
-            "require": "./dist/typescript/index.js"
-        },
-        "./package.json": "./package.json"
-    },
-    "files": [
-        "/dist"
-    ],
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "generate:nestjs": "protoc --plugin=protoc-gen-ts_proto=\".\\node_modules\\.bin\\protoc-gen-ts_proto.cmd\" --ts_proto_out=./src/nestjs -I=./proto ./proto/*.proto --ts_proto_opt=nestJs=true",
         "generate:typescript": "protoc --plugin=protoc-gen-ts_proto=\".\\node_modules\\.bin\\protoc-gen-ts_proto.cmd\" --ts_proto_out=./src/typescript -I=./proto ./proto/*.proto",
-        "build": "tsc -b -v packages && cpy ./proto ./dist"
+        "build": "tsc -b -v packages && cpy ./proto ./dist && cpy ./package.json ./dist"
     },
     "author": "",
     "license": "ISC",
