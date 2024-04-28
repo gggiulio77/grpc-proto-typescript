@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.HelloWorld = void 0;
-exports.HelloWorld = require("./nestjs/helloworld");
+exports.NestJsHelloWorld = void 0;
+exports.NestJsHelloWorld = require("@nestjs/helloworld");
 //# sourceMappingURL=index.js.map

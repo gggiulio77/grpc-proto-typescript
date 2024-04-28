@@ -1,1 +1,1 @@
-export * as HelloWorld from './nestjs/helloworld';
+export * as NestJsHelloWorld from '@nestjs/helloworld';
